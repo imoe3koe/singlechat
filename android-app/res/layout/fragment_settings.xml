@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PENGATURAN"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:letterSpacing="0.1"
+        android:paddingBottom="12dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Opsi Pengaturan -->
+    <TextView
+        android:id="@+id/tvChangeName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="> Ganti Nama Profil"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvChangePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="> Ganti Foto Profil"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="> Ganti Password"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvToggleTheme"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="> Tema (Hitam / Putih)"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:textSize="14sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:marginVertical="16dp"/>
+
+    <!-- Tombol Logout -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="LOGOUT"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:textStyle="bold"/>
+
+</LinearLayout>

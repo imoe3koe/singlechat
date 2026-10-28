@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://android.com"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Top Action Bar (Header Menu) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:background="@color/white">
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RUANG OBROLAN"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"/>
+
+        <!-- Tombol Panggilan Suara Kelompok -->
+        <Button
+            android:id="@+id/btnVoiceCall"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="[☎]"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <!-- Daftar Pesan (RecyclerView) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChatMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <!-- Bar Kirim Pesan & Lampiran (Gambar/PDF) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+
+        <!-- Tombol Lampiran (+) -->
+        <Button
+            android:id="@+id/btnAttach"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="+"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <!-- Input Pesan Teks -->
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="8dp"
+            android:background="@drawable/border_box"
+            android:hint="Tulis pesan..."
+            android:textColorHint="#666666"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:paddingHorizontal="10dp"/>
+
+        <!-- Tombol Kirim -->
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="KIRIM"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>
